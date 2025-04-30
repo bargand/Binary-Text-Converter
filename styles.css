@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #031b1b;
+  margin: 0;
+  padding: 20px;
+  color: #d1d1d1;
+}
+.container {
+  background: #052323;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+}
+h1 {
+  color: #2cc197;
+}
+select,
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #2cc197;
+  box-sizing: border-box;
+  background: #031b1b;
+  color: #d1d1d1;
+}
+textarea {
+  height: 120px;
+  resize: none;
+  overflow-y: auto;
+}
+/* button {
+      background-color: #04634d;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+  } */
+.button-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.action-button {
+  position: absolute;
+  bottom: 8px;
+  right: -1px;
+  background-color: #04634d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 11px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.action-button:hover {
+  background-color: #178e58;
+}
+button:hover {
+  background-color: #178e58;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+  textarea {
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  select,
+  textarea,
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  textarea {
+    height: 90px;
+  }
+}

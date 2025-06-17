@@ -27,3 +27,5 @@ function copyOutput() {
   outputText.select();
   document.execCommand("copy");
 }
+
+console.log(67)
